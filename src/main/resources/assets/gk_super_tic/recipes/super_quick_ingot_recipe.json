@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ALA",
+    "BSB",
+    "ALA"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:nether_star"
+    },
+    "A":
+      {
+        "item": "minecraft:iron_ingot"
+      },
+    
+    "L": 
+        {
+         "item": "tconstruct:ingots",
+         "data": 0
+        },
+    
+    "B": 
+        {
+         "item": "minecraft:rabbit_foot"
+        }
+    
+    
+  },
+  "result": {
+    "item": "gk_super_tic:super_quick_ingot",
+    "data": 0
+  }
+}

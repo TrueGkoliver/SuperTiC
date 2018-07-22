@@ -1,0 +1,11 @@
+{
+   "parent": "gk_super_tic:block/cuboid",
+   "textures": {
+       "up": "gk_super_tic:blocks/communism_block_top",
+       "down": "gk_super_tic:blocks/communism_block_top",
+       "north": "gk_super_tic:blocks/communism_block_sides",
+       "south": "gk_super_tic:blocks/communism_block_sides",
+       "east": "gk_super_tic:blocks/communism_block_sides",
+       "west": "gk_super_tic:blocks/communism_block_sides",
+   }
+}

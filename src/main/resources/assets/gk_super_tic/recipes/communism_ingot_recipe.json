@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ALA",
+    "BSM",
+    "ALA"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:nether_star"
+    },
+    "A":
+      {
+        "item": "minecraft:iron_ingot"
+      },
+    
+    "L": 
+        {
+         "item": "tconstruct:edible",
+         "data": 3
+        },
+    
+    "B": 
+        {
+         "item": "minecraft:bread"
+        },
+    
+    "M": 
+        {
+         "item": "minecraft:cooked_beef"
+        }
+    
+  },
+  "result": {
+    "item": "gk_super_tic:communism_ingot",
+    "data": 0
+  }
+}
