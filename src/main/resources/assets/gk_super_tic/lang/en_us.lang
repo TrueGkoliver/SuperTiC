@@ -1,10 +1,26 @@
+#Items
+
 item.super_pain_ingot.name=Super Pain Ingot
 item.super_quick_ingot.name=Super Quick Ingot
 item.communism_ingot.name=Communism Ingot
+
+#TiC Modifiers
 modifier.hammerandsickle.name=Hammer and Sickle
 modifier.wealth_distribution.name=Wealth Distribution
 modifier.hammerandsickle.desc=If you hit an enemy and you have a hammer and scythe in your inventory, good things are about to happen. . .
 modifier.wealth_distribution.desc=WIP
+
+#TiC Material Names
 material.communism.name=Communism
 material.super_hurt.name=Super Painful
 material.super_quick.name=Super Quick
+
+
+
+#Blocks
+
+tile.communism_block.name=Communism Block
+
+#Item Groups
+itemGroup.gksupertic.items=GkSTiC Items & Blocks
+itemGroup.gksupertic.misc=GkSTiC Miscellaneous 
