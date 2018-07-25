@@ -36,6 +36,9 @@ public class PartsCommunism implements IMake {
 		Material communism = new Material("communism", TextFormatting.DARK_RED);
 		Material super_quick = new Material("super_quick", TextFormatting.YELLOW);
 		Material super_hurt = new Material("super_hurt", TextFormatting.RED);
+		
+		//0.8 Materials
+		Material byzantine = new Material("8_byzantium", TextFormatting.BLUE);
 		final ArrayList<Material> list_of_materials = new ArrayList<Material>();
 		
 		
@@ -62,7 +65,14 @@ public class PartsCommunism implements IMake {
 				
 				);
 		TinkerRegistry.addMaterialStats(super_quick, 
-				new HeadMaterialStats(100, 5f, 30, 5),
+				new HeadMaterialStats(100, 10f, 30, 5),
+				new HandleMaterialStats(5, 100),
+				new ExtraMaterialStats(100),
+				new BowMaterialStats(5f, 400f, 50)
+				
+				);
+		TinkerRegistry.addMaterialStats(byzantine, 
+				new HeadMaterialStats(100, 10f, 30, 5),
 				new HandleMaterialStats(5, 100),
 				new ExtraMaterialStats(100),
 				new BowMaterialStats(5f, 400f, 50)
@@ -71,8 +81,7 @@ public class PartsCommunism implements IMake {
 		
 		
 		
-		
-		
+		byzantine.addTrait(CorruptRepublic.corruptempire);
 		
 		communism.addTrait(HammerAndSickle.hammer_sickle);
 		/*
@@ -91,6 +100,7 @@ public class PartsCommunism implements IMake {
 		TinkerRegistry.addMaterial(communism);
 		TinkerRegistry.addMaterial(super_quick);
 		TinkerRegistry.addMaterial(super_hurt);
+		TinkerRegistry.addMaterial(byzantine);
 		communism.setRepresentativeItem("communism_ingot");
 		MaterialIntegration integrate_communism = new MaterialIntegration(communism);
 		integrate_communism.integrate();

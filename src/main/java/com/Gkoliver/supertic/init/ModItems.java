@@ -18,7 +18,7 @@ public class ModItems
 	public static final Item SUPER_QUICK_INGOT = new ItemBase("super_quick_ingot");
 	public static final Item COMMUNISM_INGOT = new ItemBase("communism_ingot");
 	
-	/*public static final Item BYZANTIUM_INGOT = new ItemBase("byzantium_ingot");*/
+	public static final Item BYZANTIUM_INGOT = new ItemBase("byzantium_ingot");
 	public static final Item BYZANTIUM_SWORD = new ItemByzantineTrident("byzantium_sword");
 	
 	
