@@ -14,30 +14,26 @@ public class ByzantineSword extends ItemBase  {
 		super(name);
 		// TODO Auto-generated constructor stub
 	}
-	public boolean onItemUse(ItemStack item, EntityPlayer player, World world,
+	public void onItemUse(ItemStack item, EntityPlayer player, World world,
 		    // which block was in the target when clicked
 		    int posx, int posy, int posz, 
 		    // where on the target block was clicked (0.0-1.0)
 		    int side, float blockx, float blocky, float blockz)
 		{
 		BlockPos bomb_pos;
-		    if(world.isRemote) {
-		        // can't do anything here as we don't own the world (client side)
-		        return false;
-		    }
 		    
-		    else {
-		    	Vec3d thething = player.getLookVec();
-		    	bomb_pos = new BlockPos(thething);
+		    
+		Vec3d thething = player.getLookVec();
+		bomb_pos = new BlockPos(thething);
 		    	
-		    	world.createExplosion(player, bomb_pos.getX(), bomb_pos.getY(), bomb_pos.getZ(), 5, true);
+		world.createExplosion(player, bomb_pos.getX(), bomb_pos.getY(), bomb_pos.getZ(), 5, true);
 		    	
-		    }
-		    System.out.println(world.getBiome(bomb_pos).getBiomeName());
+		    
+		System.out.println(world.getBiome(bomb_pos).getBiomeName());
 		    
 		    
 		    
-			return true;
+			
 		}
 	
 
