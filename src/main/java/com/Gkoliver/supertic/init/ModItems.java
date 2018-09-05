@@ -5,9 +5,11 @@ import java.util.List;
 
 import com.Gkoliver.supertic.items.ItemBase;
 import com.Gkoliver.supertic.items.ItemByzantineTrident;
+import com.Gkoliver.supertic.items.byzantine_material.ByzantineSword;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+import net.minecraft.item.Item.ToolMaterial;
 
 public class ModItems 
 {
@@ -19,8 +21,7 @@ public class ModItems
 	public static final Item COMMUNISM_INGOT = new ItemBase("communism_ingot");
 	
 	public static final Item BYZANTIUM_INGOT = new ItemBase("byzantium_ingot");
-	public static final Item BYZANTIUM_SWORD = new ItemByzantineTrident("byzantium_sword");
-	
+	public static final Item BYZANTIUM_SWORD = new ByzantineSword("byzantium_sword");
 	
 	
 }

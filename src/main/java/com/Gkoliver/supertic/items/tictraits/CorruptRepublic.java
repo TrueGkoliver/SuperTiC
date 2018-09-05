@@ -21,11 +21,9 @@ public class CorruptRepublic extends AbstractTrait {
 		Random the_random = new Random();
 		int Chance = the_random.nextInt(5);
 		BlockStateContainer thing = ModBlocks.COMMUNISM_BLOCK.getBlockState();
-		if (Chance == 1) {
-			BlockPos pos_block = event.getPos();
-			World the_world = event.getWorld();
-			the_world.setBlockState(pos_block, thing.getBaseState());
-			}
+		BlockPos pos_block = event.getPos();
+		World the_world = event.getWorld();
+		the_world.setBlockState(pos_block, thing.getBaseState());
 	}
 
 }
