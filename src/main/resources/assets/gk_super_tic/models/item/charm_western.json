@@ -1,0 +1,6 @@
+{
+   "parent": "item/generated",
+   "textures": {
+       "layer0": "gk_super_tic:items/charm_western"
+   }
+}
