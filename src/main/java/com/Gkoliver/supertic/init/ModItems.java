@@ -8,8 +8,13 @@ import com.Gkoliver.supertic.items.ItemByzantineTrident;
 import com.Gkoliver.supertic.items.byzantine_material.ByzantineSword;
 
 import net.minecraft.block.Block;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.world.World;
 
 public class ModItems 
 {

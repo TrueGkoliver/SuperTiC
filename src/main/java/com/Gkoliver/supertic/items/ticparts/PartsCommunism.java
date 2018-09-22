@@ -39,6 +39,7 @@ public class PartsCommunism implements IMake {
 		
 		
 		//Roman Materials
+		
 		Material roma_west = new Material("roma_west", TextFormatting.YELLOW);
 		Material roma_east = new Material("roma_east", TextFormatting.DARK_PURPLE);
 		Material roma_unity = new Material("roma_unity", TextFormatting.DARK_GREEN);
@@ -46,11 +47,7 @@ public class PartsCommunism implements IMake {
 
 		
 		
-		
-		FluidMolten communism_fluid = new FluidMolten("communism", 0x99000c);
-		communism.setFluid(communism_fluid);
-		communism.setCastable(true);
-		communism.setCraftable(true);
+		;
 		
 		communism.addItem(new ItemStack(ModItems.COMMUNISM_INGOT), 1, Material.VALUE_Ingot);
 		super_quick.addItem(new ItemStack(ModItems.SUPER_QUICK_INGOT), 1, Material.VALUE_Ingot);
@@ -87,19 +84,10 @@ public class PartsCommunism implements IMake {
 		 * 
 		 * 
 		 * */
-		list_of_materials.add(communism);
-		list_of_materials.add(super_quick);
-		list_of_materials.add(super_hurt);
-		this.list_of_materials = list_of_materials;
 		
-		Main.super_tic_materials.put("super_hurt", super_hurt);
 		TinkerRegistry.addMaterial(communism);
 		TinkerRegistry.addMaterial(super_quick);
 		TinkerRegistry.addMaterial(super_hurt);
-		communism.setRepresentativeItem("communism_ingot");
-		MaterialIntegration integrate_communism = new MaterialIntegration(communism);
-		integrate_communism.integrate();
-		TinkerRegistry.integrate(integrate_communism).toolforge();
 		
 	}
 	

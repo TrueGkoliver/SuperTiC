@@ -14,6 +14,7 @@ public class ByzantineSword extends ItemBase  {
 		super(name);
 		// TODO Auto-generated constructor stub
 	}
+	
 	public void onItemUse(ItemStack item, EntityPlayer player, World world,
 		    // which block was in the target when clicked
 		    int posx, int posy, int posz, 

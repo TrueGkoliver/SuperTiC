@@ -4,7 +4,7 @@ public class Reference {
 
 	public static final String MOD_ID = "gk_super_tic";
 	public static final String NAME = "Super TiC";
-	public static final String VERSION = "0.7";
+	public static final String VERSION = "0.8";
 	public static final String ACCEPTED_VERSIONS = "[1.12.2]";
 	public static final String CLIENT_PROXY_CLASS = "com.Gkoliver.supertic.proxy.ClientProxy";
 	public static final String COMMON_PROXY_CLASS = "com.Gkoliver.supertic.proxy.CommonProxy";
