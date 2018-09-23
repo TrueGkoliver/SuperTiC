@@ -40,11 +40,12 @@ public class PartsCommunism implements IMake {
 		
 		//Roman Materials
 		
-		Material roma_west = new Material("roma_west", TextFormatting.YELLOW);
-		Material roma_east = new Material("roma_east", TextFormatting.DARK_PURPLE);
-		Material roma_unity = new Material("roma_unity", TextFormatting.DARK_GREEN);
+		Material roma_west = new Material("roma_west", 0xff6549);
+		Material roma_east = new Material("roma_east", 0x512d99);
+		Material roma_unity = new Material("roma_unity", 0x300001);
 		
-
+		//0.8 Traits
+		roma_east.addTrait(CorruptRepublic.corruptempire);
 		
 		
 		;
@@ -72,7 +73,25 @@ public class PartsCommunism implements IMake {
 				new BowMaterialStats(5f, 400f, 50)
 				
 				);
-		
+		TinkerRegistry.addMaterialStats(roma_west,
+                new HeadMaterialStats(130, 4.10f, 3.00f, 5),
+                new HandleMaterialStats(0.50f, -50),
+                new ExtraMaterialStats(25),
+                new BowMaterialStats(0.2f, 0.4f, -1f)
+		);
+		TinkerRegistry.addMaterialStats(roma_east,
+                new HeadMaterialStats(130, 4.10f, 3.00f, 5),
+                new HandleMaterialStats(0.50f, -50),
+                new ExtraMaterialStats(25),
+                new BowMaterialStats(0.2f, 0.4f, -1f)
+		);
+		TinkerRegistry.addMaterialStats(roma_unity,
+                new HeadMaterialStats(130, 4.10f, 3.00f, 5),
+                new HandleMaterialStats(0.50f, -50),
+                new ExtraMaterialStats(25),
+                new BowMaterialStats(0.2f, 0.4f, -1f)
+		);
+
 		
 		
 		
@@ -88,7 +107,9 @@ public class PartsCommunism implements IMake {
 		TinkerRegistry.addMaterial(communism);
 		TinkerRegistry.addMaterial(super_quick);
 		TinkerRegistry.addMaterial(super_hurt);
-		
+		TinkerRegistry.addMaterial(roma_west);
+		TinkerRegistry.addMaterial(roma_east);
+		TinkerRegistry.addMaterial(roma_unity);
 	}
 	
 	

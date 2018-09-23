@@ -10,7 +10,10 @@ import com.Gkoliver.supertic.items.byzantine_material.ByzantineSword;
 import com.Gkoliver.supertic.items.byzantine_material.WestCharm;
 
 import net.minecraft.block.Block;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.effect.EntityLightningBolt;
+import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.item.Item;
@@ -93,5 +96,28 @@ public class ModItems
 	    }
 
 	};
-	
+	//no u
+	public static final Item ROMA_CHARM = new WestCharm("charm_roma") {
+		public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn)
+	    {
+			float closest = Float.MAX_VALUE;
+			Entity thisOne=null;
+			for (int i = 0; i < worldIn.loadedEntityList.size(); i++)
+			{
+			if (((Entity)worldIn.loadedEntityList.get(i)).getDistance(playerIn)<closest)
+			{
+			if (worldIn.loadedEntityList.get(i) instanceof EntityMob) //if it is a mob...
+			{
+			closest = ((Entity)worldIn.loadedEntityList.get(i)).getDistance(playerIn);
+			thisOne = ((Entity)worldIn.loadedEntityList.get(i));
+			}
+			}
+			}
+			if (thisOne!=null)
+			{
+			worldIn.addWeatherEffect(new EntityLightningBolt(worldIn,thisOne.posX,thisOne.posY, thisOne.posZ, false));
+			}
+			return new ActionResult<ItemStack>(EnumActionResult.PASS, playerIn.getHeldItem(handIn));
+	    }
+	};
 }

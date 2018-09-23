@@ -5,17 +5,24 @@ item.super_quick_ingot.name=Super Quick Ingot
 item.communism_ingot.name=Communism Ingot
 item.byzantium_sword.name=Eastern Charm of Escape
 item.charm_western.name=Western Charm of Recycling
+item.charm_roma.name=United Charm of the Flowing Aqueduct
 
 #TiC Modifiers
 modifier.hammerandsickle.name=Hammer and Sickle
 modifier.wealth_distribution.name=Wealth Distribution
 modifier.hammerandsickle.desc=If you hit an enemy and you have a hammer and scythe in your inventory, good things are about to happen. . .
 modifier.wealth_distribution.desc=WIP
+modifier.corrupt_empire.name=Wealthy Empire
+modifier.corrupt_empire.desc=The entire wealth of one of the longest-lasting empires in the world lies in the palm of your hand.
+
 
 #TiC Material Names
 material.communism.name=Communism
 material.super_hurt.name=Super Painful
 material.super_quick.name=Super Quick
+material.roma_west.name=Western Roman
+material.roma_east.name=Eastern Roman
+material.roma_unity.name=Roman
 
 
 
