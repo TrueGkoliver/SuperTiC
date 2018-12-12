@@ -21,16 +21,16 @@ public class ByzantineSword extends ItemBase  {
 		    // where on the target block was clicked (0.0-1.0)
 		    int side, float blockx, float blocky, float blockz)
 		{
-		BlockPos bomb_pos;
+			BlockPos bomb_pos;
 		    
 		    
-		Vec3d thething = player.getLookVec();
-		bomb_pos = new BlockPos(thething);
+			Vec3d thething = player.getLookVec();
+			bomb_pos = new BlockPos(thething);
 		    	
-		world.createExplosion(player, bomb_pos.getX(), bomb_pos.getY(), bomb_pos.getZ(), 5, true);
+			world.createExplosion(player, bomb_pos.getX(), bomb_pos.getY(), bomb_pos.getZ(), 5, true);
 		    	
 		    
-		System.out.println(world.getBiome(bomb_pos).getBiomeName());
+			System.out.println(world.getBiome(bomb_pos).getBiomeName());
 		    
 		    
 		    

@@ -1,6 +1,8 @@
 
 package com.Gkoliver.supertic.items.ticparts;
 
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 
 import com.Gkoliver.supertic.Main;
@@ -18,6 +20,8 @@ import slimeknights.tconstruct.TinkerIntegration;
 import slimeknights.tconstruct.library.*;
 import slimeknights.tconstruct.library.fluid.*;
 import slimeknights.tconstruct.library.materials.*;
+import slimeknights.tconstruct.tools.melee.item.FryPan;
+
 import com.Gkoliver.supertic.items.tictraits.*;
 import net.minecraft.util.text.*;
 import com.Gkoliver.supertic.util.Utilities;
@@ -46,9 +50,10 @@ public class PartsCommunism implements IMake {
 		
 		//0.8 Traits
 		roma_east.addTrait(CorruptRepublic.corruptempire);
+		roma_west.addTrait(WesternTrait.WESTERNER);
+
+	
 		
-		
-		;
 		
 		communism.addItem(new ItemStack(ModItems.COMMUNISM_INGOT), 1, Material.VALUE_Ingot);
 		super_quick.addItem(new ItemStack(ModItems.SUPER_QUICK_INGOT), 1, Material.VALUE_Ingot);
@@ -73,6 +78,9 @@ public class PartsCommunism implements IMake {
 				new BowMaterialStats(5f, 400f, 50)
 				
 				);
+		
+		
+		//0.8 Materials
 		TinkerRegistry.addMaterialStats(roma_west,
                 new HeadMaterialStats(130, 4.10f, 3.00f, 5),
                 new HandleMaterialStats(0.50f, -50),
@@ -98,11 +106,8 @@ public class PartsCommunism implements IMake {
 		communism.addTrait(HammerAndSickle.hammer_sickle);
 		/*
 		 * TODO Fix Wealth Division
-		 * 
 		 * communism.addTrait(WealthDivision.wealth_division);
-		 * 
-		 * 
-		 * */
+		 */
 		
 		TinkerRegistry.addMaterial(communism);
 		TinkerRegistry.addMaterial(super_quick);
