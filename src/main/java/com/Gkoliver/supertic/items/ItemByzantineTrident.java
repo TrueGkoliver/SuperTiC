@@ -33,12 +33,11 @@ public class ItemByzantineTrident extends ItemSword {
 		EntityPlayer player = playerIn;
     	Vec3d exist = player.getLookVec();
     	ActionResult<ItemStack> result = new ActionResult<ItemStack>(EnumActionResult.SUCCESS, itemStackIn);
-    	/*
-    	 * TODO currently fixing things with this
+    	
+    	/*Scrapped in favor of the Charm of Escape
     	EntityTNTPrimed tnt = new EntityTNTPrimed(world, exist.x, exist.y, exist.z, player);
     	world.spawnEntity(tnt);
     	*/
-    	//TODO Fix the thing and the things
     	worldIn.createExplosion(player, player.posX, player.posY, player.posZ, 5, true);
     	System.out.println("Gott! An explosion should be happening.");
     	

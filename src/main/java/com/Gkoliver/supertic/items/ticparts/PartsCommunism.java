@@ -51,6 +51,7 @@ public class PartsCommunism implements IMake {
 		//0.8 Traits
 		roma_east.addTrait(CorruptRepublic.corruptempire);
 		roma_west.addTrait(WesternTrait.WESTERNER);
+		roma_unity.addTrait(Plunderer.plunderer);
 
 	
 		
@@ -62,20 +63,20 @@ public class PartsCommunism implements IMake {
                 new HeadMaterialStats(130, 4.10f, 3.00f, 5),
                 new HandleMaterialStats(0.50f, -50),
                 new ExtraMaterialStats(25),
-                new BowMaterialStats(0.2f, 0.4f, -1f)
+                new BowMaterialStats(0.2f, 1.15f, -1f)
 		);
 		TinkerRegistry.addMaterialStats(super_hurt, 
 				new HeadMaterialStats(400, 5, 100, 5),
 				new HandleMaterialStats(5, 400),
 				new ExtraMaterialStats(400),
-				new BowMaterialStats(0.3f, 400f, 200)
+				new BowMaterialStats(0.3f, 1.15f, 200)
 				
 				);
 		TinkerRegistry.addMaterialStats(super_quick, 
-				new HeadMaterialStats(100, 10f, 30, 5),
+				new HeadMaterialStats(100, 50f, 30, 5),
 				new HandleMaterialStats(5, 100),
 				new ExtraMaterialStats(100),
-				new BowMaterialStats(5f, 400f, 50)
+				new BowMaterialStats(5f, 1.15f, 50)
 				
 				);
 		
