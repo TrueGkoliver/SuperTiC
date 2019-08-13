@@ -42,6 +42,7 @@ import slimeknights.tconstruct.tools.ranged.item.Bolt;
 import slimeknights.tconstruct.tools.ranged.item.Shuriken;
 import slimeknights.tconstruct.tools.tools.Excavator;
 import slimeknights.tconstruct.tools.tools.Hammer;
+import slimeknights.tconstruct.tools.tools.LumberAxe;
 import slimeknights.tconstruct.tools.tools.Scythe;
 
 public class ModItems 
@@ -246,6 +247,7 @@ public class ModItems
 					boolean instance_hammer = (curStack.getItem() instanceof Hammer);
 					boolean instance_scythe = (curStack.getItem() instanceof Scythe);
 					boolean instance_excavator = (curStack.getItem() instanceof Excavator);
+					boolean instance_lumberaxe = (curStack.getItem() instanceof LumberAxe);
 					if (instance_shuriken || instance_arrow || instance_bolt) {
 						TinkerModifiers.modFins.apply(curStack);
 					} else {
@@ -253,7 +255,7 @@ public class ModItems
 						TinkerModifiers.modBeheading.apply(curStack);
 						
 					}
-					if (instance_hammer || instance_scythe || instance_excavator) {
+					if (instance_hammer || instance_scythe || instance_excavator || instance_lumberaxe) {
 						TinkerModifiers.modHarvestWidth.apply(curStack);
 						TinkerModifiers.modHarvestHeight.apply(curStack);
 					}
@@ -294,17 +296,18 @@ public class ModItems
 					boolean instance_hammer = (curStack.getItem() instanceof Hammer);
 					boolean instance_scythe = (curStack.getItem() instanceof Scythe);
 					boolean instance_excavator = (curStack.getItem() instanceof Excavator);
+					boolean instance_lumberaxe = (curStack.getItem() instanceof LumberAxe);
 					if (instance_shuriken || instance_arrow || instance_bolt) {
 						TinkerModifiers.modFins.apply(curStack);
 					} else {
-						for (int aa = 0; aa < 5; aa++) {
+						for (int aa = 0; aa < 250; aa++) {
 							TinkerModifiers.modHaste.apply(curStack);
 						}
 						
 						
 						
 					
-					if (instance_hammer || instance_scythe || instance_excavator) {
+					if (instance_hammer || instance_scythe || instance_excavator || instance_lumberaxe) {
 						TinkerModifiers.modHarvestWidth.apply(curStack);
 						TinkerModifiers.modHarvestHeight.apply(curStack);
 					}

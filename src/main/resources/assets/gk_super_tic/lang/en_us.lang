@@ -6,6 +6,11 @@ item.communism_ingot.name=Communism Ingot
 item.byzantium_sword.name=Eastern Charm of Escape
 item.charm_western.name=Western Charm of Recycling
 item.charm_roma.name=United Charm of the Flowing Aqueduct
+item.east_god.name=Godslayer Forge
+item.east_creator.name=Power Forge
+item.western_pick.name=Western Omnitool
+item.sword_west.name=Cosmic Shotgun
+item.byzatium_ingot.name=Byzantine Ingot
 
 #TiC Modifiers
 modifier.hammerandsickle.name=Hammer and Sickle
@@ -14,6 +19,8 @@ modifier.hammerandsickle.desc=If you hit an enemy and you have a hammer and scyt
 modifier.wealth_distribution.desc=WIP
 modifier.corrupt_empire.name=Wealthy Empire
 modifier.corrupt_empire.desc=The entire wealth of one of the longest-lasting empires in the world lies in the palm of your hand.
+modifier.westerntrait.name=PLACEHOLDER VEGAS HOCKEY
+modifier.plunderer.name=Plunderer
 
 
 #TiC Material Names

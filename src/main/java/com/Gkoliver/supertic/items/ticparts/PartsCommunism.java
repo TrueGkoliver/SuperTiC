@@ -51,7 +51,7 @@ public class PartsCommunism implements IMake {
 		//0.8 Traits
 		roma_east.addTrait(CorruptRepublic.corruptempire);
 		roma_west.addTrait(WesternTrait.WESTERNER);
-		roma_unity.addTrait(Plunderer.plunderer);
+		//roma_unity.addTrait(Plunderer.plunderer);
 
 	
 		
